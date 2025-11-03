@@ -1,0 +1,267 @@
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 24px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.addButton:hover {
+  background-color: #1d4ed8;
+}
+
+.searchContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.searchRow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .searchRow {
+    flex-direction: row;
+  }
+}
+
+.searchInput {
+  flex: 1;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .searchInput {
+    max-width: none;
+  }
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filterButtonActive {
+  background-color: #2563eb;
+  color: white;
+}
+
+.filterButtonInactive {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.filterButtonInactive:hover {
+  background-color: #e5e7eb;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 0;
+  color: #6b7280;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .productsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.productCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.productCard:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 224px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer :global(img) {
+  object-fit: contain;
+  padding: 16px;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1f2937;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  max-height: 3.2em;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  max-height: 4.2em;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cardPrice {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2563eb;
+}
+
+.category {
+  font-size: 12px;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.actionButtons {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.actionButton {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionButton:hover {
+  transform: scale(1.1);
+}
+
+.likeButton {
+  color: #9ca3af;
+}
+
+.likeButtonActive {
+  color: #ef4444;
+}
+
+.deleteButton {
+  color: #9ca3af;
+}
+
+.deleteButton:hover {
+  color: #ef4444;
+}
+

@@ -1,0 +1,145 @@
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 24px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notFoundContainer {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.notFoundContent {
+  text-align: center;
+}
+
+.notFoundText {
+  font-size: 20px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background-color: #1d4ed8;
+}
+
+.headerButton {
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerButton:hover {
+  background-color: #d1d5db;
+}
+
+.productCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .productCard {
+    display: flex;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    width: 384px;
+    height: auto;
+  }
+}
+
+.imageContainer :global(img) {
+  object-fit: contain;
+  padding: 16px;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+.categoryBadge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.productTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.priceContainer {
+  margin-bottom: 24px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.descriptionSection {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+}
+
+.descriptionTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.descriptionText {
+  color: #374151;
+  line-height: 1.75;
+}
+

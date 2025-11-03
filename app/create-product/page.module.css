@@ -1,0 +1,126 @@
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 24px;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+.formContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  border-color: #ef4444;
+}
+
+.textarea {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.textareaError {
+  border-color: #ef4444;
+}
+
+.textareaError:focus {
+  border-color: #ef4444;
+}
+
+.errorMessage {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.submitButton {
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submitButton:hover {
+  background-color: #1d4ed8;
+}
+
+.cancelButton {
+  padding: 10px 24px;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancelButton:hover {
+  background-color: #d1d5db;
+}
+
